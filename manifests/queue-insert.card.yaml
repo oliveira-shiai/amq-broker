@@ -1,0 +1,11 @@
+kind: ActiveMQArtemisAddress
+apiVersion: broker.amq.io/v1beta1
+metadata:
+  name: queue-insert.card
+  namespace: amqbroker
+spec:
+  addressName: Insert.Card
+  queueName: Insert.Card
+  routingType: anycast
+status:
+  conditions: []
