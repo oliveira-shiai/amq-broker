@@ -23,5 +23,3 @@ spec:
     expose: true
   adminPassword: amqbroker
   adminUser: amqbroker
-status:
-  conditions: []
