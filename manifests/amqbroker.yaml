@@ -17,7 +17,7 @@ spec:
     messageMigration: false
     persistenceEnabled: true
     requireLogin: false
-    size: 4
+    size: 2
     enableMetricsPlugin: true
   console:
     expose: true
