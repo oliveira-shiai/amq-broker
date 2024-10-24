@@ -7,5 +7,3 @@ spec:
   addressName: Insert.Card
   queueName: Insert.Card
   routingType: anycast
-status:
-  conditions: []
