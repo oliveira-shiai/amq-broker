@@ -1,0 +1,27 @@
+apiVersion: broker.amq.io/v1beta1
+kind: ActiveMQArtemis
+metadata:
+  name: amqbroker
+  namespace: amqbroker
+spec:
+  acceptors:
+    - name: artemis
+      expose: true
+      port: 61616
+      protocols: 'CORE,AMQP,STOMP,HORNETQ,MQTT,OPENWIRE'
+  deploymentPlan:
+    image: placeholder
+    jolokiaAgentEnabled: true
+    journalType: nio
+    managementRBACEnabled: true
+    messageMigration: false
+    persistenceEnabled: true
+    requireLogin: false
+    size: 2
+    enableMetricsPlugin: true
+  console:
+    expose: true
+  adminPassword: amqbroker
+  adminUser: amqbroker
+status:
+  conditions: []
